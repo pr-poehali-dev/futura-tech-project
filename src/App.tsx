@@ -98,10 +98,22 @@ const steps = [
 function CTAFormFull() {
   const [form, setForm] = useState({ name: "", company: "", contact: "", question: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (form.name && form.contact) setSubmitted(true);
+    if (!form.name || !form.contact) return;
+    setLoading(true);
+    try {
+      await fetch("https://functions.poehali.dev/d2a0c8fd-11a3-47d9-97ff-36a3607caec8", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+    } finally {
+      setLoading(false);
+      setSubmitted(true);
+    }
   };
 
   if (submitted) {
@@ -146,9 +158,10 @@ function CTAFormFull() {
       />
       <Button
         type="submit"
-        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-medium tracking-wider uppercase text-sm py-6 transition-all duration-300"
+        disabled={loading}
+        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-medium tracking-wider uppercase text-sm py-6 transition-all duration-300 disabled:opacity-60"
       >
-        Записаться на диагностику
+        {loading ? "Отправляем..." : "Записаться на диагностику"}
       </Button>
     </form>
   );
@@ -523,7 +536,18 @@ function App() {
             <p className="text-muted-foreground text-sm text-center">
               Диагностическая бизнес-игра · Александра Слепцова
             </p>
-            <p className="text-muted-foreground/40 text-xs">© 2024</p>
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <a href="https://t.me/yourSleptsova" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                Telegram
+              </a>
+              <a href="mailto:A.sleptsova@micegroup.ru" className="text-muted-foreground hover:text-primary transition-colors">
+                A.sleptsova@micegroup.ru
+              </a>
+              <a href="https://vk.com/sleptsova_aleksandra" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                ВКонтакте
+              </a>
+            </div>
+            <p className="text-muted-foreground/40 text-xs">© 2025</p>
           </div>
         </div>
       </footer>
