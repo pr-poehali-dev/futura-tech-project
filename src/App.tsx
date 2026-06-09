@@ -458,12 +458,23 @@ function App() {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 leading-tight">
                 Александра Слепцова
               </h2>
-              <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-                Предприниматель, психолог, бизнес-коуч, игропрактик и разработчик трансформационных игр.
-              </p>
               <p className="text-muted-foreground leading-relaxed text-lg mb-8">
-                В работе соединяет системный анализ, психологию, коучинг, финансы, предпринимательский опыт и игровые механики. Помогает собственникам увидеть бизнес целиком — и найти путь туда, где хочется быть.
+                MBA Finance, магистр кризисной психологии, эриксоновский гипноз. Предприниматель с собственным опытом в бизнесе — разработчик трансформационных игр и бизнес-коуч.
               </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div className="relative p-5 bg-card border border-border">
+                  <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary" />
+                  <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary" />
+                  <p className="text-primary text-xs tracking-widest uppercase mb-2">Образование</p>
+                  <p className="text-foreground text-sm leading-relaxed">MBA Finance · Магистр кризисной психологии · Эриксоновский гипноз</p>
+                </div>
+                <div className="relative p-5 bg-card border border-border">
+                  <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary" />
+                  <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary" />
+                  <p className="text-primary text-xs tracking-widest uppercase mb-2">Подход</p>
+                  <p className="text-foreground text-sm leading-relaxed">Соединяю финансы, психологию и игровые механики — чтобы собственник увидел бизнес целиком</p>
+                </div>
+              </div>
               <div className="flex flex-wrap gap-3">
                 {["Предприниматель", "Психолог", "Бизнес-коуч", "Игропрактик"].map((tag) => (
                   <span key={tag} className="px-4 py-1.5 border border-primary/40 text-primary text-sm tracking-wide">
@@ -479,16 +490,12 @@ function App() {
                 <div className="absolute -top-3 -right-3 w-12 h-12 border-t-2 border-r-2 border-primary" />
                 <div className="absolute -bottom-3 -left-3 w-12 h-12 border-b-2 border-l-2 border-primary" />
                 <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-primary" />
-                <div className="w-full h-full bg-card border border-border flex items-center justify-center overflow-hidden">
-                  <div className="text-center p-8">
-                    <div className="w-20 h-20 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mx-auto mb-4">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-10 h-10 text-primary">
-                        <circle cx="12" cy="8" r="5" />
-                        <path d="M3 21v-2a9 9 0 0118 0v2" />
-                      </svg>
-                    </div>
-                    <p className="text-muted-foreground text-sm">Место для вашего фото</p>
-                  </div>
+                <div className="w-full h-full bg-card border border-border overflow-hidden">
+                  <img
+                    src="https://cdn.poehali.dev/projects/c026b056-4c10-4a71-a925-79e5d3383511/bucket/a9804dd9-e0ae-456e-b074-7fca9ed3e4e1.jpg"
+                    alt="Александра Слепцова"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
               </div>
             </div>
