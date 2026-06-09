@@ -210,10 +210,13 @@ function App() {
             Диагностическая бизнес-игра
           </p>
 
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground mb-4 leading-tight">
             <span className="text-gold-gradient">Радар</span>{" "}
             <span className="text-foreground">бизнеса</span>
           </h1>
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl text-primary tracking-widest uppercase mb-6">
+            Точка боли
+          </p>
 
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-4">
             Диагностика, которая показывает, где бизнес теряет деньги, энергию и скорость
