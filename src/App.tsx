@@ -192,8 +192,8 @@ function App() {
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-          style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/c026b056-4c10-4a71-a925-79e5d3383511/files/ae67dad9-9fcc-4d2a-bfd7-87753813fb85.jpg')" }}
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-40"
+          style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/c026b056-4c10-4a71-a925-79e5d3383511/files/f2163f06-ecf8-488c-8377-c9e9d5552d69.jpg')" }}
         />
         <ArtDecoSunburst />
 
