@@ -67,6 +67,15 @@ const painPoints = [
     ),
     text: "Перед ростом или перезапуском нужна честная диагностика",
   },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10">
+        <path d="M4 6h16M4 12h16M4 18h7" />
+        <path d="M15 15l6 6M21 15l-6 6" />
+      </svg>
+    ),
+    text: "Нет системы — есть только хаос и реакция",
+  },
 ];
 
 const results = [
