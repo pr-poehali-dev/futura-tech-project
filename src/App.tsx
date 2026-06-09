@@ -191,10 +191,6 @@ function App() {
 
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-60"
-          style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/c026b056-4c10-4a71-a925-79e5d3383511/bucket/a1cd3acc-3fed-4e3c-a7e7-1b958257c801.jpg')" }}
-        />
         <ArtDecoSunburst />
 
         <div className="relative z-10 text-center max-w-4xl mx-auto">
