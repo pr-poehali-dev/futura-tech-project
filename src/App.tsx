@@ -485,14 +485,14 @@ function App() {
             </div>
 
             <div className="order-1 md:order-2 flex justify-center">
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80">
+              <div className="relative w-72 sm:w-96" style={{ aspectRatio: "3/4" }}>
                 <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-primary" />
                 <div className="absolute -top-3 -right-3 w-12 h-12 border-t-2 border-r-2 border-primary" />
                 <div className="absolute -bottom-3 -left-3 w-12 h-12 border-b-2 border-l-2 border-primary" />
                 <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-primary" />
                 <div className="w-full h-full bg-card border border-border overflow-hidden">
                   <img
-                    src="https://cdn.poehali.dev/projects/c026b056-4c10-4a71-a925-79e5d3383511/bucket/a9804dd9-e0ae-456e-b074-7fca9ed3e4e1.jpg"
+                    src="https://cdn.poehali.dev/projects/c026b056-4c10-4a71-a925-79e5d3383511/bucket/4f3a1d9c-77c5-495e-a292-2c7d1d1b7047.png"
                     alt="Александра Слепцова"
                     className="w-full h-full object-cover object-top"
                   />
