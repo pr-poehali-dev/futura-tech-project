@@ -476,7 +476,7 @@ function App() {
                 </div>
               </div>
               <div className="flex flex-wrap gap-3">
-                {["Предприниматель", "Психолог", "Бизнес-коуч", "Игропрактик"].map((tag) => (
+                {["Предприниматель", "Психолог", "Бизнес-коуч", "Системный аналитик"].map((tag) => (
                   <span key={tag} className="px-4 py-1.5 border border-primary/40 text-primary text-sm tracking-wide">
                     {tag}
                   </span>
